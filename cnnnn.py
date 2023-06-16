@@ -7,7 +7,7 @@ import torch.optim as optim
 from sklearn.metrics import accuracy_score, recall_score, f1_score
 
 # 从你给的链接中读取数据
-data = pd.read_csv("data/cases.csv", encoding="utf-8")
+data = pd.read_csv("cases.csv", encoding="utf-8")
 
 # 把罪状转换成数字表示，用空格分隔每个字
 data["罪状"] = data["罪状"].apply(lambda x: " ".join(list(x)))
